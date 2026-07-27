@@ -26,6 +26,12 @@ main {
     height: 100vh;
     width: 100vw;
 }
+h1 {
+    color: #86672c;
+}
+p {
+    margin: 14px 0px;
+}
 #login {
     position: absolute;
     top: 50%;
@@ -37,6 +43,7 @@ main {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    height: 520px;
 
     transition: width 0.6s, height 0.6s;
     transition-timing-function: ease;
@@ -65,15 +72,32 @@ form > div.campo {
     background-color: #666f81;
     width: 100%;
     display: block;
-    height: 30px;
-    border-radius: 5px;
+    height: 40px;
+    border-radius: 8px;
     margin: 7px 0px;
-
+}
+div.campo > span {
+    color: rgb(238, 189, 189);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
-form label {
-
+div.campo > input {
+    background-color: #1e2c47;
+    font-size: 1em;
+    width: calc(100% - 20%);
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    transform: translateY(-10px);
 }
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
+
 
 form > div > input[type = submit] {
     display: block;
@@ -81,7 +105,7 @@ form > div > input[type = submit] {
     width: 100%;
     height: 30px;
     background-color: #2D4471;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
